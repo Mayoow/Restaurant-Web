@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maalmaha Xurriyada</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      text-align: center;
+      background: #f4f4f4;
+      padding: 1rem 0;
+    }
+
+    .wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    nav {
+      width: 200px;
+      margin-right: 1rem;
+    }
+
+    .container {
+      flex: 1;
+      padding: 0 1rem;
+    }
+
+    .latest-news {
+      width: 200px;
+      margin-left: 1rem;
+      background: #f4f4f4;
+      padding: 1rem;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      color: #333;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    aside h3 {
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+
+      nav,
+      .latest-news {
+        width: 100%;
+        margin: 0 0 1rem 0;
+      }
+
+      .container {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maalmaha Xurriyada</h1>
+  </header>
+
+  <div class="wrapper">
+    <nav>
+      <a href="#">Bogga Hore</a>
+      <a href="#">Maqaalada</a>
+      <a href="#">Taariikhda</a>
+      <a href="#">Nala Soo Xiriir</a>
+    </nav>
+
+    <section class="container">
+      <h2>Warbixinta Maalmaha Xurriyada</h2>
+
+      <article>
+        <h3><a href="north.html">Xurriyadda Gobollada Waqooyi</a></h3>
+        <time datetime="1960-06-26">26 Juun 1960</time>
+        <p>
+          Gobollada Waqooyi ee Soomaaliya waxay xurriyadda ka qaateen gumeysigii Ingiriiska 26-kii Juun, 1960.
+        </p>
+      </article>
+
+      <article>
+        <h3><a href="south.html">Xurriyadda Gobollada Koonfureed</a></h3>
+        <time datetime="1960-07-01">1 Luulyo 1960</time>
+        <p>
+          Gobollada Koonfureed waxay xurriyadda ka qaateen gumeysigii Talyaaniga 1-dii Luulyo, 1960.
+        </p>
+      </article>
+    </section>
+
+    <aside class="latest-news">
+      <h3><a href="north.html">Xurriyadda Waqooyi</a></h3>
+      <h3><a href="south.html">Xurriyadda Koonfureed</a></h3>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Xuquuqda © 2025 Maalmaha Xurriyada</p>
+  </footer>
+
+</body>
+</html>

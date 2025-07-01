@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre College of Science - Koorsada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section (consistent with homepage) -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="https://placehold.co/60x60/ADD8E6/000000?text=BCS" alt="Barre College of Science Logo" class="university-logo">
+                <h1 class="site-title">Barre College of Science</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Bogga Hore</a></li>
+                    <li><a href="about.html" class="nav-link">Nagu Saabsan</a></li>
+                    <li><a href="courses.html" class="nav-link current-page">Koorsada</a></li>
+                    <li><a href="gallery.html" class="nav-link">Sawirada</a></li>
+                    <li><a href="contact.html" class="nav-link">Nala Soo Xiriir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content container">
+        <h2 class="section-title text-center">Bixinta Koorsadayada Dhamaystiran</h2>
+
+        <!-- Course Categories Section: Uses Flexbox for responsive layout of categories -->
+        <section class="course-categories-section">
+            <h3 class="subsection-title">Sahami Qaybta</h3>
+            <div class="category-buttons-container">
+                <a href="#networking" class="category-button category-networking">Shabakadaha</a>
+                <a href="#multimedia" class="category-button category-multimedia">Warbaahinta badan</a>
+                <a href="#compsci" class="category-button category-compsci">Sayniska Kombiyuutarka</a>
+                <a href="#data" class="category-button category-data">Falanqaynta Xogta</a>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Networking Courses Section -->
+        <section id="networking" class="course-section">
+            <h3 class="subsection-title">Koorsada Shabakadaha</h3>
+            <p class="section-description">
+                Barnaamijyadayada shabakadaha waxay daboolayaan wax walba oo ka bilaabma fikradaha aasaasiga ah ilaa amniga internetka
+                iyo kaabayaasha daruuriga ah. Isu diyaari shahaadooyinka warshadaha iyo mustaqbal shaqo oo wanaagsan oo ku saabsan maamulka shabakadda ama amniga.
+            </p>
+            <!-- Course Table: Demonstrates HTML table structure with accessibility features -->
+            <div class="course-table-container">
+                <table class="course-table">
+                    <caption class="table-caption caption-networking">Koorsada Shabakadaha ee Diyaar ah</caption>
+                    <thead>
+                        <tr class="table-header table-header-networking">
+                            <th class="table-cell" scope="col">Koodhka Koorsada</th>
+                            <th class="table-cell" scope="col">Magaca Koorsada</th>
+                            <th class="table-cell" scope="col">Dhibcaha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows with accessible headers -->
+                        <tr>
+                            <td class="table-cell">NET101</td>
+                            <td class="table-cell">Hordhac ku saabsan Shabakadaha</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">NET202</td>
+                            <td class="table-cell">Asaasiga Amniga Shabakadaha</td>
+                            <td class="table-cell">4</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">NET305</td>
+                            <td class="table-cell">Dhismaha Shabakadaha Daruuriga ah</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-footer table-footer-networking">
+                            <td class="table-cell" colspan="2">Wadarta Koorsada Shabakadaha ee ku taxan</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Multimedia Courses Section -->
+        <section id="multimedia" class="course-section">
+            <h3 class="subsection-title">Koorsada Warbaahinta Badan & Naqshadaynta</h3>
+            <p class="section-description">
+                Kobci awooddaada hal-abuur leh barnaamijyadayada multimedia ee firfircoon. Laga bilaabo naqshadaynta garaafyada ilaa tafatirka fiidyaha,
+                baro qalabka iyo farsamooyinka lagu hirgelinayo aragtidaada dhijitaalka ah.
+            </p>
+            <div class="course-table-container">
+                <table class="course-table">
+                    <caption class="table-caption caption-multimedia">Koorsada Warbaahinta Badan ee Diyaar ah</caption>
+                    <thead>
+                        <tr class="table-header table-header-multimedia">
+                            <th class="table-cell" scope="col">Koodhka Koorsada</th>
+                            <th class="table-cell" scope="col">Magaca Koorsada</th>
+                            <th class="table-cell" scope="col">Dhibcaha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-cell">MMD100</td>
+                            <td class="table-cell">Hordhac ku saabsan Naqshadaynta Garaafyada</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">MMD210</td>
+                            <td class="table-cell">Asaasiga Animation-ka Shabakadaha</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">MMD300</td>
+                            <td class="table-cell">Wax Soo Saarka Fiidyaha & Tafatirka</td>
+                            <td class="table-cell">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Computer Science Courses Section -->
+        <section id="compsci" class="course-section">
+            <h3 class="subsection-title">Koorsada Sayniska Kombiyuutarka</h3>
+            <p class="section-description">
+                Manhajkayada sayniska kombiyuutarka waxaa loogu talagalay in lagu bixiyo aasaas aragtiyeed oo adag oo lagu daray
+                xirfado barnaamijayn oo wax ku ool ah. Sahami meelaha sida horumarinta software-ka, qaab-dhismeedka xogta, iyo AI.
+            </p>
+            <div class="course-table-container">
+                <table class="course-table">
+                    <caption class="table-caption caption-compsci">Koorsada Sayniska Kombiyuutarka ee Diyaar ah</caption>
+                    <thead>
+                        <tr class="table-header table-header-compsci">
+                            <th class="table-cell" scope="col">Koodhka Koorsada</th>
+                            <th class="table-cell" scope="col">Magaca Koorsada</th>
+                            <th class="table-cell" scope="col">Dhibcaha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-cell">CS101</td>
+                            <td class="table-cell">Hordhac ku saabsan Barnaamijyada (Python)</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">CS205</td>
+                            <td class="table-cell">Qaab-dhismeedka Xogta iyo Algorithms</td>
+                            <td class="table-cell">4</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">CS320</td>
+                            <td class="table-cell">Asaasiga Horumarinta Shabakadaha</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">CS401</td>
+                            <td class="table-cell">Hordhac ku saabsan Sirdoonka Macmalka ah</td>
+                            <td class="table-cell">4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Data Analytics Courses Section -->
+        <section id="data" class="course-section">
+            <h3 class="subsection-title">Koorsada Falanqaynta Xogta</h3>
+            <p class="section-description">
+                Waqtigan casriga ah ee macluumaadka, fahamka xogta waa furaha. Koorsadayada falanqaynta xogta waxay ku siinayaan xirfadaha
+                aad ku ururin karto, ku falanqayn karto, iyo ku fasiri karto xog badan si aad u qaadato go'aamo xog-ogaal ah.
+            </p>
+            <div class="course-table-container">
+                <table class="course-table">
+                    <caption class="table-caption caption-data">Koorsada Falanqaynta Xogta ee Diyaar ah</caption>
+                    <thead>
+                        <tr class="table-header table-header-data">
+                            <th class="table-cell" scope="col">Koodhka Koorsada</th>
+                            <th class="table-cell" scope="col">Magaca Koorsada</th>
+                            <th class="table-cell" scope="col">Dhibcaha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-cell">DA101</td>
+                            <td class="table-cell">Asaasiga Xogta ee IT-ga</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">DA201</td>
+                            <td class="table-cell">Falanqaynta Tirakoobka ee Xogta</td>
+                            <td class="table-cell">4</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell">DA301</td>
+                            <td class="table-cell">Asaasiga Barashada Mashiinka</td>
+                            <td class="table-cell">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (consistent with homepage) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; <time datetime="2025">2025</time> Barre College of Science. Dhammaan xuquuqaha way xafidan yihiin.</p>
+            <p class="footer-links">
+                <a href="privacy.html" class="footer-link">Qaanuunka Arrimaha gaarka ah</a> |
+                <a href="terms.html" class="footer-link">Shuruudaha Adeegga</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

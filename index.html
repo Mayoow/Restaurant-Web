@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre College of Science - Mustaqbalkaaga Teknoolojiyadda Halkan ka Bilow</title>
+    <!-- Link to the external stylesheet for all global styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Use Inter font from Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section: Contains the college name and main navigation -->
+    <header class="main-header">
+        <div class="container header-content">
+            <!-- College Logo and Name (h1 for main heading) -->
+            <div class="logo-area">
+                <!-- Using a placeholder image for the logo, user will provide actual images -->
+                <img src="images/logo.jpg" alt="Barre College of Science Logo" class="university-logo">
+                <h1 class="site-title">Barre College of Science</h1>
+            </div>
+
+            <!-- Navigation Bar: Uses unordered list for links. Flexbox for horizontal layout -->
+            <nav class="main-nav">
+                <ul>
+                    <!-- Home link, active state -->
+                    <li><a href="index.html" class="nav-link current-page">Bogga Hore</a></li>
+                    <!-- About Us link -->
+                    <li><a href="about.html" class="nav-link">Nagu Saabsan</a></li>
+                    <!-- Courses link -->
+                    <li><a href="courses.html" class="nav-link">Koorsada</a></li>
+                    <!-- Gallery link -->
+                    <li><a href="gallery.html" class="nav-link">Sawirada</a></li>
+                    <!-- Contact link -->
+                    <li><a href="contact.html" class="nav-link">Nala Soo Xiriir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content container">
+        <!-- Hero Section: Introduction to the College -->
+        <section class="hero-section">
+            <h2 class="section-title">Kobcinta Teknoolojiyadda Berri, Maanta</h2>
+            <p class="section-description">
+                Ku soo dhowaada Barre College of Science, oo ah machad hormuud u ah dejinta jiilka xiga ee xirfadlayaasha IT-ga.
+                Waxaan bixinnaa barnaamijyo casri ah oo ku saabsan Shabakadaha, Warbaahinta badan, iyo Sayniska Kombiyuutarka, kuwaas oo loogu talagalay in ay ku siiyaan xirfadihii
+                looga baahnaa si aad ugu guulaysato warshadaha tignoolajiyada ee isbedbedela.
+            </p>
+            <!-- Call to action button -->
+            <a href="courses.html" class="call-to-action-button">
+                Sahami Koorsadayada
+            </a>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Key Programs Section: Uses Flexbox for a responsive grid of program highlights -->
+        <section class="programs-section">
+            <h2 class="section-title text-center">Barnaamijyadayada Gaarka ah</h2>
+            <div class="program-cards-container">
+                <!-- Program Card 1: Networking -->
+                <article class="program-card">
+                    <div class="card-inner">
+                        <img src="images/network.jpg" alt="Barnaamijka Shabakadaha" class="card-image">
+                        <h3 class="card-title">Asaasiga Shabakadaha</h3>
+                        <p class="card-description">
+                            Baro aasaaska kaabayaasha shabakadaha, amniga internetka, iyo shabakadaha daruuriga ah. Shaybaaradayadu waxay kuu diyaarinayaan caqabadaha dhabta ah.
+                        </p>
+                        <a href="courses.html#networking" class="card-link">Wax Badan Baro <i class="fas fa-arrow-right icon-small"></i></a>
+                    </div>
+                </article>
+
+                <!-- Program Card 2: Multimedia -->
+                <article class="program-card">
+                    <div class="card-inner">
+                        <img src="https://placehold.co/300x200/F0D9D9/990000?text=Multimedia" alt="Barnaamijka Multimedia" class="card-image">
+                        <h3 class="card-title">Farshaxanka Dijitaalka ah</h3>
+                        <p class="card-description">
+                            Fur hal-abuurkaaga adiga oo baranaya naqshadaynta garaafyada, wax soo saarka fiidyaha, animation-ka shabakadda, iyo warbaahinta isdhexgalka.
+                        </p>
+                        <a href="courses.html#multimedia" class="card-link">Wax Badan Baro <i class="fas fa-arrow-right icon-small"></i></a>
+                    </div>
+                </article>
+
+                <!-- Program Card 3: Computer Science -->
+                <article class="program-card">
+                    <div class="card-inner">
+                        <img src="https://placehold.co/300x200/D1ECF1/0C5460?text=CS" alt="Barnaamijka Computer Science" class="card-image">
+                        <h3 class="card-title">Sayniska Kombiyuutarka Sare</h3>
+                        <p class="card-description">
+                            Si qoto dheer u gal algorithms, qaab-dhismeedka xogta, injineerinka software-ka, iyo sirdoonka macmalka ah. Isu diyaari xirfad horumarinta software-ka ama cilmi-baadhaha.
+                        </p>
+                        <a href="courses.html#compsci" class="card-link">Wax Badan Baro <i class="fas fa-arrow-right icon-small"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Callout/Quote Section: Uses blockquote for emphasis -->
+        <section class="quote-section">
+            <blockquote class="quote-text">
+                "Wadada kaliya ee shaqo weyn lagu qabto waa in aad jeceshahay waxa aad qabanayso."
+            </blockquote>
+            <p class="quote-author">— Steve Jobs</p>
+        </section>
+
+        <!-- Mini-Branch Information Section -->
+        <section class="branches-section">
+            <h2 class="section-title text-center">Xarumahayaga</h2>
+            <div class="branch-cards-container">
+                <div class="branch-card-small main-campus-border">
+                    <h3 class="branch-title">Xarunta Weyn</h3>
+                    <p class="branch-address">Wadada Teknoolojiyadda 123, Magaalada Hal-abuurnimo</p>
+                </div>
+                <div class="branch-card-small downtown-campus-border">
+                    <h3 class="branch-title">Xarunta Magaalada</h3>
+                    <p class="branch-address">Wadada Dijitaalka 456, Xarunta Metro</p>
+                </div>
+                <div class="branch-card-small online-hub-border">
+                    <h3 class="branch-title">Xarunta Barashada Online-ka</h3>
+                    <p class="branch-address">Waxbarasho dabacsan, meel kasta laga heli karo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section: Consistent across all pages -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; <time datetime="2025">2025</time> Barre College of Science. Dhammaan xuquuqaha way xafidan yihiin.</p>
+            <p class="footer-links">
+                <a href="privacy.html" class="footer-link">Qaanuunka Arrimaha gaarka ah</a> |
+                <a href="terms.html" class="footer-link">Shuruudaha Adeegga</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

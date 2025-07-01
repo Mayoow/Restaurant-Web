@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre College of Science - Nala Soo Xiriir</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section (consistent with homepage) -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="https://placehold.co/60x60/ADD8E6/000000?text=BCS" alt="Barre College of Science Logo" class="university-logo">
+                <h1 class="site-title">Barre College of Science</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Bogga Hore</a></li>
+                    <li><a href="about.html" class="nav-link">Nagu Saabsan</a></li>
+                    <li><a href="courses.html" class="nav-link">Koorsada</a></li>
+                    <li><a href="gallery.html" class="nav-link">Sawirada</a></li>
+                    <li><a href="contact.html" class="nav-link current-page">Nala Soo Xiriir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content container">
+        <h2 class="section-title text-center">Nala Soo Xiriir Barre College of Science</h2>
+
+        <section class="contact-introduction">
+            <p class="section-description">
+                Ma qabtaa su'aalo ama ma u baahan tahay macluumaad dheeraad ah? Buuxi foomka hoose, waxaanan kuugu soo jawaabi doonnaa goor dhow.
+                Waxa kale oo aad nagala soo xiriiri kartaa taleefoon ama iimeyl.
+            </p>
+
+            <!-- Contact Information Section (uses Flexbox for layout) -->
+            <div class="contact-info-cards-container">
+                <div class="contact-info-card">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <div>
+                        <h3 class="contact-heading">Taleefan</h3>
+                        <p class="contact-detail"><a href="tel:+252-61-TECHNOVA" class="contact-link">(+252) 61-TECH-NOVA</a></p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <h3 class="contact-heading">Iimeyl</h3>
+                        <p class="contact-detail"><a href="mailto:info@barrecollege.edu.so" class="contact-link">info@barrecollege.edu.so</a></p>
+                    </div>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div>
+                        <h3 class="contact-heading">Cinwaan</h3>
+                        <p class="contact-detail">Wadada Teknoolojiyadda 123, Magaalada Hal-abuurnimo, Muqdisho</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form: Uses fieldset and legend for grouping, CSS Grid for layout -->
+            <form action="submit_form.php" method="post" class="contact-form">
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Weydiintaada</legend>
+
+                    <!-- Name Fields -->
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">Magaca Koowaad: <span class="required-star">*</span></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Gali magacaaga koowaad" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">Magaca Dambe: <span class="required-star">*</span></label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Gali magacaaga dambe" required class="form-input">
+                    </div>
+
+                    <!-- Email Field (HTML5 type="email" for validation) -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">Iimeyl: <span class="required-star">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="adigoo@tusaale.com" required class="form-input">
+                    </div>
+
+                    <!-- Phone Field (HTML5 type="tel") -->
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Taleefan:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="06XXXXXXXX" class="form-input">
+                    </div>
+
+                    <!-- Preferred Contact Method (Radio Buttons) -->
+                    <div class="form-group contact-method-group">
+                        <label class="form-label">Habka Xiriirka aad jeceshahay:</label>
+                        <div class="radio-options">
+                            <label class="radio-label">
+                                <input type="radio" name="contactMethod" value="email" class="form-radio" checked>
+                                <span class="radio-text">Iimeyl</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="contactMethod" value="phone" class="form-radio">
+                                <span class="radio-text">Taleefan</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Inquiry Type (Select Dropdown) -->
+                    <div class="form-group">
+                        <label for="inquiryType" class="form-label">Nooca Weydiinta: <span class="required-star">*</span></label>
+                        <select id="inquiryType" name="inquiryType" required class="form-select">
+                            <option value="">-- Mid dooro --</option>
+                            <option value="admissions">Qabashada Ardayda Cusub</option>
+                            <option value="courses">Macluumaadka Koorsada</option>
+                            <option value="technical">Taageero Farsamo</option>
+                            <option value="general">Su'aal Guud</option>
+                            <option value="feedback">Fikir Celis</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Area (Textarea) -->
+                    <div class="form-group form-group-full-width">
+                        <label for="message" class="form-label">Fariintaada: <span class="required-star">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ku qor fariintaada halkan..." required class="form-textarea"></textarea>
+                    </div>
+
+                    <!-- Newsletter Opt-in (Checkbox) -->
+                    <div class="form-group form-group-full-width newsletter-checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                        <label for="newsletter" class="checkbox-label">
+                            Haa, waxaan jeclahay inaan helo warar iyo wargelin ka yimaada Barre College of Science.
+                        </label>
+                    </div>
+
+                    <!-- Submit and Reset Buttons -->
+                    <div class="form-buttons form-group-full-width">
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-paper-plane button-icon"></i> Dir Fariinta
+                        </button>
+                        <button type="reset" class="reset-button">
+                            <i class="fas fa-redo button-icon"></i> Dib u Deg Foomka
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section (consistent with homepage) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; <time datetime="2025">2025</time> Barre College of Science. Dhammaan xuquuqaha way xafidan yihiin.</p>
+            <p class="footer-links">
+                <a href="privacy.html" class="footer-link">Qaanuunka Arrimaha gaarka ah</a> |
+                <a href="terms.html" class="footer-link">Shuruudaha Adeegga</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
